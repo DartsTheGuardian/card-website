@@ -9,7 +9,7 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 3000px;
-    margin:0;
+    margin: 0;
 }
 
 @keyframes scrollBg {
@@ -55,12 +55,10 @@ input:checked+.card {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transform-style: preserve-3d;
     transition: box-shadow 0.3s ease;
 }
 
-.face:hover {
-    box-shadow: 50px 50px 70px rgba(0, 0, 0, 0.3);
-}
 
 .face img {
     max-width: 100%;
@@ -68,7 +66,7 @@ input:checked+.card {
     border-radius: 20px;
     border: solid 2px;
     border-color: rgba(207, 207, 207, 1);
-    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 50px 70px rgba(0, 0, 0, 0.8);
 }
 
 .front-face {
@@ -79,10 +77,14 @@ input:checked+.card {
     transform: rotateY(180deg);
 }
 
+.front-face:hover {
+    transform: scale(1.05);
+}
+
+
 .links {
     display: none;
 }
-
 
 .square {
     width: 80px;
@@ -155,13 +157,33 @@ input:checked+.card {
         filter: blur(20px);
     }
 
-    .first  { top: 50%; left: 20%; }
-    .second { top: 38%; left: 35%; }
-    .third  { top: 50%; left: 50%; }
-    .fourth { top: 38%; left: 65%; }
-    .fifth  { top: 50%; left: 80%; }
+    .first {
+        top: 50%;
+        left: 20%;
+    }
+
+    .second {
+        top: 38%;
+        left: 35%;
+    }
+
+    .third {
+        top: 50%;
+        left: 50%;
+    }
+
+    .fourth {
+        top: 38%;
+        left: 65%;
+    }
+
+    .fifth {
+        top: 50%;
+        left: 80%;
+    }
 
     .face:hover {
-        box-shadow: none; /* Disable hover effect on mobile */
+        box-shadow: none;
+        /* Disable hover effect on mobile */
     }
 }
