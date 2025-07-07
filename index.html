@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur SD - Profile card</title>
+    <link rel="stylesheet" href="./Ressources/CSS/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.typekit.net/lhh6glc.css">
+</head>
+
+<body>
+    <div class="profile-card">
+        <input type="checkbox" id="flip-toggle" hidden>
+
+        <div class="card">
+            <label for="flip-toggle" class="face front-face">
+                <img src="./Ressources/Images/FrontCard.png">
+            </label>
+
+            <label for="flip-toggle" class="face back-face">
+                <img src="./Ressources/Images/BackCard.png">
+            </label>
+        </div>
+
+        <div class="links" id="links">
+            <button class="square first" 
+            onclick="window.open('https://dartstheguardian.itch.io/dressink', 
+            '_blank')">
+
+            <button class="square second" 
+            onclick="window.open('https://dartstheguardian.itch.io/the-light-bearer', 
+            '_blank')">
+
+            <button class="square third" 
+            onclick="window.open('https://dartstheguardian.itch.io/rgb', 
+            '_blank')">
+
+            <button class="square fourth" 
+            onclick="window.open('https://www.artstation.com/artwork/oJ1Q5q', 
+            '_blank')">
+
+            <button class="square fifth" 
+            onclick="window.open('https://www.artstation.com/artwork/rld2w5', 
+            '_blank')">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

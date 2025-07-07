@@ -1,0 +1,149 @@
+body {
+    height: 100vh;
+    background-image: url('StarBase.png');
+    background-size: 3000px 1500px;
+    background-position: center;
+    background-repeat: repeat;
+    animation: scrollBg 60s linear infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 3000px;
+}
+
+@keyframes scrollBg {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 3000px 1500px;
+    }
+}
+
+.profile-card {
+    position: relative;
+    width: 2100px;
+    height: 1200px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.8s ease;
+}
+
+input:checked+.card {
+    transform: rotateY(180deg);
+}
+
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.face:hover {
+    box-shadow: 0px 300px 100px rgba(0, 0, 0, 0.3);
+}
+
+.face img {
+    max-width: 125%;
+    height: auto;
+    border-radius: 100px;
+    border: solid 10px;
+    border-color: rgba(207, 207, 207, 1);
+    box-shadow: 0 200px 100px rgba(0, 0, 0, 0.5);
+}
+
+.front-face {
+    z-index: 2;
+}
+
+.back-face {
+    transform: rotateY(180deg);
+}
+
+.links {
+    display: none;
+}
+
+
+.square{
+    width: 360px;
+    height: 900px;
+    background-color: rgba(255, 0, 0, 0);
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    transform: translate(-50%, -50%); 
+    border-radius: 80px;
+    filter:blur(40px);
+}
+
+
+.first{
+    top:43%;
+    left:13%;
+}
+
+.first:hover
+{
+    background-color: rgba(234, 237, 12, 0.2);
+}
+
+.second
+{
+    top: 28%;
+    left: 31%;
+}
+
+.second:hover
+{
+    background-color: rgba(102, 237, 12, 0.2);
+}
+
+.third {
+    top: 43%;
+    left: 50%;
+}
+
+.third:hover
+{
+    background-color: rgba(12, 237, 237, 0.2);
+}
+
+
+.fourth {
+    top: 28.2%;
+    left: 69%;
+}
+
+.fourth:hover
+{
+    background-color: rgba(12, 16, 237, 0.2);
+}
+
+.fifth {
+    top: 43%;
+    left: 87%;
+}
+
+.fifth:hover
+{
+    background-color: rgba(237, 12, 57, 0.2);
+}
+
