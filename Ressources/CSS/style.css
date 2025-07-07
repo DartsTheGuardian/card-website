@@ -63,7 +63,7 @@ input:checked+.card {
 .face img {
     max-width: 100%;
     height: auto;
-    border-radius: 100px;
+    border-radius: 20px;
     border: solid 2px;
     border-color: rgba(207, 207, 207, 1);
     box-shadow: 0 50px 70px rgba(0, 0, 0, 0.5);
@@ -90,7 +90,7 @@ input:checked+.card {
     cursor: pointer;
     border: none;
     transform: translate(-50%, -50%);
-    border-radius: 80px;
+    border-radius: 40px;
     filter: blur(40px);
 }
 
