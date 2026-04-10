@@ -136,13 +136,13 @@ volume.addEventListener("input", function () {
     var x = volume.value;
 
     if (x <= 33) {
-        color = 'linear-gradient(90deg,rgb(62, 174, 46)' + x +'%, rgb(214, 214, 214)' + x +'%';
+        color = 'linear-gradient(90deg,rgb(62, 174, 46)' + x +'%, rgb(214, 214, 214)' + x +'%)';
     }
     else if (x > 33 && x <= 66) {
-        color = 'linear-gradient(90deg,rgb(217, 205, 26)' + x + '%, rgb(214, 214, 214)' + x + '%';
+        color = 'linear-gradient(90deg,rgb(217, 205, 26)' + x + '%, rgb(214, 214, 214)' + x + '%)';
     }
     else if (x > 66 && x <= 100) {
-        color = 'linear-gradient(90deg,rgb(222, 24, 68)' + x + '%, rgb(214, 214, 214)' + x + '%';
+        color = 'linear-gradient(90deg,rgb(222, 24, 68)' + x + '%, rgb(214, 214, 214)' + x + '%)';
     }
 
     volume.style.background = color;
