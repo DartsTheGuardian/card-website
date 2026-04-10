@@ -12,12 +12,25 @@
 </head>
 
 <body>
+    <!--<audio controls autoplay muted>
+        <source src="./Ressources/Music/Consideration.mp3">
+    </audio>-->
+
+    <div class="top-left hidden" id="top-left">
+        <div class="volume-slider">
+            <p class="audio-text">Volume Slider</p>
+            <input type="range" min="0" max="100" value="20" class="slider" id="audio-slider">
+            <img src="./Ressources/Images/VolumeOn.png" onclick="MuteButton()" class="mute-button" id="mute-button">
+        </div>
+        <p class="audio-text" id="track-name"></p>
+    </div>
+
     <div class="profile-card">
         <input type="checkbox" id="flip-toggle" hidden>
 
         <div class="card">
             <label for="flip-toggle" class="face front-face">
-                <img src="./Ressources/Images/FrontCard.png">
+                <img src="./Ressources/Images/FrontCard.png" onclick="StartAudio('./Ressources/Music/Consideration.mp3')">
             </label>
 
             <label for="flip-toggle" class="face back-face">
@@ -26,44 +39,51 @@
         </div>
 
         <div class="links" id="links">
-            <button class="square first" onclick="window.open('https://dartstheguardian.itch.io/dressink', 
-            '_blank')">
+            <button class="square first" onclick="window.open('https://dartstheguardian.itch.io/work-in-progress-game',
+            '_blank')"> </button>
 
-                <button class="square second" onclick="window.open('https://dartstheguardian.itch.io/the-light-bearer', 
-            '_blank')">
+            <button class="square second" onclick="window.open('https://mak0u.itch.io/medichament',
+            '_blank')"> </button>
 
-                    <button class="square third" onclick="window.open('https://dartstheguardian.itch.io/rgb', 
-            '_blank')">
+            <button class="square third" onclick="window.open('https://dartstheguardian.itch.io/dressink',
+            '_blank')"> </button>
 
-                        <button class="square fourth" onclick="window.open('https://www.artstation.com/artwork/oJ1Q5q', 
-            '_blank')">
+            <button class="square fourth" onclick="window.open('https://dartstheguardian.itch.io/rgb',
+            '_blank')"> </button>
 
-                            <button class="square fifth" onclick="window.open('https://www.artstation.com/artwork/rld2w5', 
-            '_blank')">
+            <button class="square fifth" onclick="window.open('https://dartstheguardian.itch.io/the-light-bearer',
+            '_blank')"> </button>
         </div>
 
         <div class="description">
             <p class="first">
-                <b style="font-size:40px">Dress'Ink</b>
-                <br>Android application made for the Louvre-Lens Week-end 2025</br>
+                <b style="font-size:40px">미완성 - Work In Progress</b>
+                <br>An office job simulator, in which your work *might* be appreciated.
             </p>
             <p class="second">
-                <b style="font-size:40px">The Light Bearer</b>
-                <br>Be the Light in their darkness!</br>
+                <b style="font-size:40px">Médichament</b>
+                <br>Global Game Jam 2024
             </p>
             <p class="third">
-                <b style="font-size:40px">Randomly Generated Bastille (RGB)</b>
-                <br>Dive deeper into this colourful dungeon!</br>
+                <b style="font-size:40px">Dress'Ink</b>
+                <br>Android application made for the Louvre-Lens Week-end 2025
             </p>
             <p class="fourth">
-                <b style="font-size:40px">Médichament</b>
-                <br>Global Game Jam 2024</br>
+                <b style="font-size:40px">Randomly Generated Bastille (RGB)</b>
+                <br>Dive deeper into this colourful dungeon!
             </p>
             <p class="fifth">
-                <b style="font-size:40px">Floating Island</b>
-                <br>3D Project using Blender and Substance Painter</br>
+                <b style="font-size:40px">The Light Bearer</b>
+                <br>Be the Light in their darkness!
             </p>
         </div>
+    </div>
+
+    <div class="bottom-right hidden" id="bottom-right">
+        <p class="qr-code-text">Click or scan me !</p>
+        <a target="_blank" rel="noopener noreferrer" href="https://dartstheguardian.itch.io/work-in-progress-game">
+            <img src="./Ressources/Images/QRcode.png" class="qr-code">
+            </a>
     </div>
 
     <script src="script.js"></script>
