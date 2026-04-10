@@ -8,7 +8,7 @@
 
 @font-face {
     font-family: 'Lexend';
-    src: url('../Fonts/Lexend-VariableFont_wght.tff') format('truetype');
+    src: url('../Fonts/Lexend-VariableFont_wght.ttf') format('truetype');
     font-weight :normal;
     font-style: normal;
     font-display : swap;
@@ -30,6 +30,7 @@ body {
 
 .top-left {
     position: absolute;
+    display:flex
     top: 20px;
     left: 20px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -313,10 +314,13 @@ input:checked+.card {
     display: none;
 }
 
-.description.highlighted p.first p.second p.third p.fourth p.fifth {
-
-    display: block;
-    opacity: 1;
+.description.highlighted p.first,
+.description.highlighted p.second,
+.description.highlighted p.third,
+.description.highlighted p.fourth,
+.description.highlighted p.fifth {
+        display: block;
+        opacity: 1;
 }
 
 @media (max-width: 768px) {
