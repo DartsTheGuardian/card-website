@@ -327,11 +327,6 @@ input:checked+.card {
 }
 
 @media (max-width: 768px) {
-
-    body{
-        height: 50vh;
-    }
-
     .profile-card {
         width: 95%;
         aspect-ratio: 3 / 4;
