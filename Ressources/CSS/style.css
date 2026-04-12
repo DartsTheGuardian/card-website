@@ -360,6 +360,12 @@ input:checked+.card {
         left: 80%;
     }
 
+    .qr-code {
+        height: 75px;
+        width: 75px;
+        align-content: center;
+    }
+
     .face:hover {
         box-shadow: none;
         /* Disable hover effect on mobile */
