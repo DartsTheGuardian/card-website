@@ -327,9 +327,13 @@ input:checked+.card {
 }
 
 @media (max-width: 768px) {
+
+    body{
+        height: 50vh;
+    }
+
     .profile-card {
         width: 95%;
-        height : 50%;
         aspect-ratio: 3 / 4;
     }
 
@@ -384,9 +388,7 @@ input:checked+.card {
     }
 
     .bottom-right {
-        display: flex;
-        position: absolute;
-        bottom: 50px;
+        display: hide;
     }
 
     .face:hover {
