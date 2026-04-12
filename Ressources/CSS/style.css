@@ -388,7 +388,7 @@ input:checked+.card {
     }
 
     .bottom-right {
-        display: hide;
+        display: none;
     }
 
     .face:hover {
