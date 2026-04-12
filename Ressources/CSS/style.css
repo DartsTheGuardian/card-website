@@ -387,6 +387,11 @@ input:checked+.card {
         font-size: 10px;
     }
 
+    .description {
+        bottom: -75px;
+    }
+
+
     .bottom-right {
         display: none;
     }
