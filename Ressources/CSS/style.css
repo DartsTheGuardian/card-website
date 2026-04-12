@@ -30,7 +30,7 @@ body {
 
 .top-left {
     position: absolute;
-    display:flex
+    display:flex;
     top: 20px;
     left: 20px;
     background-color: rgba(0, 0, 0, 0.4);
@@ -301,7 +301,6 @@ input:checked+.card {
     align-items: center;
     justify-content: center;
     font-size: 23px;
-
 }
 
 .description-title {
@@ -330,6 +329,7 @@ input:checked+.card {
 @media (max-width: 768px) {
     .profile-card {
         width: 95%;
+        height : 50%;
         aspect-ratio: 3 / 4;
     }
 
@@ -341,6 +341,7 @@ input:checked+.card {
 
     .description p {
         width: 95%;
+        font-size: 13px;
     }
 
     .first {
