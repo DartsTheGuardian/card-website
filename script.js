@@ -4,6 +4,7 @@ const volume = document.getElementById('audio-slider');
 const muteButton = document.getElementById('mute-button');
 const topLeftControls = document.getElementById('top-left');
 const bottomRightQR = document.getElementById('bottom-right');
+const bottomLeftQR = document.getElementById('bottom-left');
 
 let audio;
 let isPlaying = false;
@@ -110,6 +111,7 @@ function PlayAudio() {
 function ShowControls() {
     topLeftControls.classList.remove('hidden');
     bottomRightQR.classList.remove('hidden');
+    bottomLeftQR.classList.remove('hidden');
 }
 
 function MuteButton() {
