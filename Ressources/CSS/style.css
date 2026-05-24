@@ -130,6 +130,24 @@ body {
     opacity: 0;
 }
 
+.bottom-left {
+    display: flex;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px 10px 10px;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.bottom-left.hidden {
+    opacity: 0;
+}
+
 .qr-code{
     height : 150px;
     width : 150px;
@@ -327,14 +345,14 @@ input:checked+.card {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        background-size: 1000px 500px;
+    }
+
     .profile-card {
         width: 95%;
         aspect-ratio: 3 / 4;
-    }
-
-    
-    body {
-        background-size: 1000px 500px;
     }
 
     .square {
@@ -346,6 +364,10 @@ input:checked+.card {
     .description p {
         width: 95%;
         font-size: 13px;
+    }
+
+    .description {
+        bottom: -75px;
     }
 
     .first {
@@ -387,12 +409,11 @@ input:checked+.card {
         font-size: 10px;
     }
 
-    .description {
-        bottom: -75px;
+    .bottom-right {
+        display: none;
     }
 
-
-    .bottom-right {
+    .bottom-left{
         display: none;
     }
 
