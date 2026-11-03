@@ -167,7 +167,8 @@ body {
     }
 
     to {
-        background-position: 1500px 750px;
+        /* background-position: 1500px 750px; */
+        background-position: 0 0;
     }
 }
 
