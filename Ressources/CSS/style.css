@@ -17,10 +17,10 @@
 body {
     height: 100vh;
     background-image: url('StarBase.png');
-    background-size: 1500px 750px;
+    background-size: 1920px 1080px;
     background-position: center;
-    background-repeat: repeat;
-    animation: scrollBg 60s linear infinite;
+    /* background-repeat: repeat; */
+    /* animation: scrollBg 60s linear infinite; */
     display: flex;
     align-items: center;
     justify-content: center;
